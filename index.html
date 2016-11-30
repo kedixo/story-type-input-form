@@ -1,24 +1,81 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Story type input form</title>
-    </head>
-<body>
-
-<h3>A demonstration of how to access a Checkbox</h3>
-
-Checkbox: <input type="checkbox" id="myCheck">
-
-<p>Click the "Try it" button to check the checkbox.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-    var x = document.getElementById("myCheck");
-    x.checked = true;
-}
-</script>
-
-</body>
-</html>
+<form action="#" id="unique_id" class="productFilter">
+  <fieldset class="step1 option0">
+      <legend>Lorizzle ipsizzle (Q1)</legend>
+      <p>
+          <input id="question_1" name="group_1" type="radio" />
+          <label for="question_1">Yes!</label>
+      </p>
+      <p>
+            <input id="question_2" name="group_1" type="radio"/>
+            <label for="question_2">No.</label>
+        </p>
+    </fieldset>
+    <fieldset class="hide step2 option1">
+        <legend>Sizzle pizzle (Branch 1)</legend>
+        <p>
+            <input id="question_1_1" name="group_2" type="radio" />
+            <label for="question_1_1">True</label>
+        </p>
+        <p>
+            <input id="question_1_2" name="group_2" type="radio" />
+            <label for="question_1_2">False</label>
+        </p>
+    </fieldset>
+    <fieldset class="hide step2 option2">
+        <legend>Grizzle fipdizzle (Branch 2)</legend>
+        <p>
+            <input id="question_2_1" name="group_3" type="radio" />
+            <label for="question_2_1">True</label>
+        </p>
+        <p>
+            <input id="question_2_2" name="group_3" type="radio" />
+            <label for="question_2_2">False</label>
+        </p>
+    </fieldset>
+    <fieldset class="hide step3 option11">
+        <legend>Suscipizzle lorizzle (Branch 1 1)</legend>
+        <p>
+            <input id="question_1_1_1" name="group_4" type="radio"/>
+            <label for="question_1_1_1">Yea</label>
+        </p>
+        <p>
+            <input id="question_1_1_2" name="group_4" type="radio"/>
+            <label for="question_1_1_2">Nay</label>
+        </p>
+    </fieldset>
+    <fieldset class="hide step3 option12">
+        <legend>Suscipizzle izzle (Branch 1 2)</legend>
+        <p>
+            <input id="question_1_2_1" name="group_5" type="radio"/>
+            <label for="question_1_2_1">Yea</label>
+        </p>
+        <p>
+            <input id="question_1_2_2" name="group_5" type="radio" />
+            <label for="question_1_2_2">Nay</label>
+        </p>
+    </fieldset>
+    <fieldset class="hide step3 option21">
+        <legend>Macdizzle ma nizzle (Branch 2 1)</legend>
+        <p>
+            <input id="question_2_1_1" name="group_6" type="radio" />
+            <label for="question_2_1_1">Yea</label>
+        </p>
+        <p>
+            <input id="question_2_1_2" name="group_6" type="radio" />
+            <label for="question_2_1_2">Nay</label>
+        </p>
+    </fieldset>
+    <fieldset class="hide step3 option22">
+        <legend>Shizzle bizzle (Branch 2 2)</legend>
+        <p>
+            <input id="question_2_2_1" name="group_7" type="radio" />
+            <label for="question_2_2_1">Yea</label>
+        </p>
+        <p>
+            <input id="question_2_2_2" name="group_7" type="radio" />
+            <label for="question_2_2_2">Nay</label>
+        </p>
+    </fieldset>
+</form>
+<p>Lorizzle ipsizzle doggy sit amizzle, shizzlin dizzle adipiscing nizzle. Nullizzle sapien velizzle, nizzle break yo neck, yall, suscipizzle da bomb, dizzle vizzle, sheezy.</p>
+<a title="A button, fo shizzle." href="#" class="buttonGreen"><span>Click me. Do it. Now!</span></a>
