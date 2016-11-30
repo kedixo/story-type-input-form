@@ -62,4 +62,3 @@ var base = {
 $(
 function() {
     base.productFilterSetup();
-});
