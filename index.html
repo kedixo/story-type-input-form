@@ -4,7 +4,6 @@
 <title>Decision Tree</title>
 <link href="main.css" rel="stylesheet" type="text/css" />  <!-- you don't need to use this -->
 	<script src="jquery-3.1.1.min.js"></script>
-<script src="file.js"></script>  
   </head>
   <body>
     <dl class="decision-tree">
@@ -42,6 +41,12 @@
 	  </dl>
 	</dd>
 </dl>
+	  <script>
+$("dl.decision-tree dd").addClass("collapsed");
+$("dl.decision-tree dt").click(function(event) {
+		$(event.target).next().toggleClass("collapsed");
+});
+</script>
   </body>
 
 </html>
