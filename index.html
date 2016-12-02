@@ -2,9 +2,8 @@
 <html>
 <head>
 <title>Decision Tree</title>
-<link href="main.css" rel="stylesheet" type="text/css" /> 
 <script src="jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="file.js"></script>
+	<link href="main.css" rel="stylesheet" type="text/css" /> 
   </head>
   <body>
     <dl class="decision-tree">
@@ -42,7 +41,12 @@
 	  </dl>
 	</dd>
 </dl>
-	
+	<script>
+$("dl.decision-tree dd").addClass("collapsed");
+$("dl.decision-tree dt").click(function(event) {
+		$(event.target).next().toggleClass("collapsed");
+});
+</script>
   </body>
 
 </html>
