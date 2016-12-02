@@ -6,10 +6,12 @@
 	<link href="main.css" rel="stylesheet" type="text/css" /> 
   </head>
   <body>
+	  <h1>Which Publishing Tool Should I Use?</h1>
+	  <h3>Click on the entry below that best summarizes your situation -- the tree will suggest the correct publishing tool for your needs</h3>
    <dl class="decision-tree">
-  <dt>Topic 1</dt>
+  <dt>I have to publish immediately!</dt>
   <dd><dl>
-         <dt>Subtopic 1 - 1</dt>
+         <dt>The news is evolving, with fast updates</dt>
          <dd>
            <dl>
              <dt>Subtopic 1 - 1 - 1</dt>
@@ -20,13 +22,19 @@
              <dd>[...]</dd>
            </dl>
          </dd>
-         <dt>Subtopic 1 - 2</dt>
+         <dt>The news is evolving, with information coming sporadically</dt>
          <dd>[...]</dd>
          <dt>Subtopic 1 - 3</dt>
          <dd>[...]</dd>
       </dl>
+	     <dt>The news is pretty clear, and shouldn't require many updates</dt>
+         <dd>
+           <dl>
+             <dt>Consider using a standard Scoop article</dt>
+           </dl>
+         </dd>
   </dd>
-  <dt>Topic 2</dt>
+  <dt>I have some preparation time</dt>
   <dd><dl>
          <dt>Subtopic 2 - 1</dt>
          <dd>[...]</dd>
@@ -48,7 +56,6 @@
   </dd>
 
 </dl>
-	  <script async src="//jsfiddle.net/8qpLw745/embed/"></script>
 	   	<script>
   $("dl.decision-tree dd").addClass("collapsed");
   $("dl.decision-tree dt").click(function(event) {
