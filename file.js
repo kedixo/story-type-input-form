@@ -1,6 +1,5 @@
-<script>
-$("dl.decision-tree dd").addClass("collapsed");
-$("dl.decision-tree dt").click(function(event) {
-		$(event.target).next().toggleClass("collapsed");
-});
-</script>
+  $("dl.decision-tree dd, dl.decision-tree dt").addClass("collapsed");
+  $("dl.decision-tree dt").click(function(event) {
+  	$(event.target).toggleClass("collapsed");
+    $(event.target).next().toggleClass("collapsed");
+  });
